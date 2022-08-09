@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+section{
+    padding: 10px 10vw;
+}
+.header{
+    background:  rgb(32, 32, 32);
+    color: rgb(227, 242, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.header img{
+    width: 40px;
+}
+.headerTitle{
+    display: none;
+}
+
+.header ul{
+    list-style-type: none;
+    padding: 0;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.menu-icon{
+    display: none;
+}
+
+.header li{
+
+}
+
+.cover-img{
+    min-height: 200px;
+    background-image: url("../assets/images/cover.jpeg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    color: rgb(227, 242, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cover-img .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.71);
+}
+
+.cover-img h1{
+    z-index: 10;
+    font-size: 60px;
+    letter-spacing: 30px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.welcome-cont{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    line-height: 3;
+    color: rgb(227, 242, 255);
+    background: rgb(32, 32, 32);
+}
+section h2{
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+letter-spacing: 5px;
+}
+
+#team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: rgb(227, 242, 255);
+    background-color: black;
+}
+#team h2{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.hero-card{
+    background: rgb(32, 32, 32);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.226);
+    padding: 100px 40px;
+    text-align: center;
+    line-height: 1.5;
+    width: calc(100% / 3 - 50px);
+}
+.hero-card .img-cont{
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    background: rgb(32, 32, 32);
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.img-cont img{
+    width: 100%;
+}
+
+.hero-card h4{
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+.hero-card i{
+    font-size: 20px;
+    padding: 10px;
+}
+.hero-card:hover .img-cont{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.514);
+}
+
+
+.footer-sec{
+    background: rgb(32, 32, 32);
+    color: rgb(227, 242, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sidebar{
+    height: 0;
+    overflow: hidden;
+}
+.closebtn{
+    font-size: 40px;
+}
+.sidebar a{
+    display: block;
+    text-align: center;
+    padding: 10px ;
+}
+
+@media screen and (max-width: 1000px) {
+    section{
+        padding: 10px 2vw;
+    }
+    .header ul{
+        display: none;
+    }
+    .headerTitle{
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .sidebar{
+        height: auto;
+        padding: 30px 0;
+        transition: all 0.3s ease-in-out;
+        font-family: "Raleway", sans-serif;
+    }
+    .sidebar a:hover{
+        transform: scale(1.1);
+        font-weight: 600;
+    }
+    .menu-icon{
+        width: 25px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .menu-icon:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .hero-card{
+width: 100%;
+    }
+}
+
+/* <a href="https://www.linkedin.com/in/ochiengsulwe" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://twitter.com/ochiengkodongo" target="_blank"><i class="fa-brands fa-square-twitter"><i></a> */
